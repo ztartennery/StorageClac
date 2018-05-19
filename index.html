@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body>
+    
+<div class="all"><h1>This is a calculator for converting between the advertised capacity and actual capacity of stoarage device. e.g., Hard disk drive and memory stick.</h1><br><br>
+
+
+    <form id="directionlist">
+        <input type="radio" name="directionChoice" value="toact" checked> From advertised to actual
+        <br>
+        <input type="radio" name="directionChoice" value="toad"> From actual to advertised
+        <br>
+    </form>
+    <form>
+        <input type="number" id="number" name="number">
+        <select id="dropdown">
+            <option value="1">KB</option>
+            <option value="2">MB</option>
+            <option value="3">GB</option>
+            <option value="4">TB</option>
+        </select>
+        <button type="button" onclick="calcFunc()">Calculate!</button>
+    </form>
+    <h2><span id="1">???</span><span class ='unit'>KB</span></h2>
+    <h2><span id="2">???</span><span class ='unit'>MB</span></h2>
+    <h2><span id="3">???</span><span class ='unit'>GB</span></h2>
+    <h2><span id="4">???</span><span class ='unit'>TB</span></h2></div>
+    <script src="app.js"></script>
+</body>
+
+</html>
